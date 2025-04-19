@@ -19,16 +19,19 @@ body {
   }
   
   main, article {
-    max-width: 800px;
+    max-width: 650px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 2rem;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.125rem;
+    line-height: 1.75;
+    border-radius: 8px;
   }
   
   h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
   
   h2 {
@@ -38,16 +41,21 @@ body {
   
   .date {
     color: #888;
-    font-size: 14px;
-    margin-top: -10px;
+    font-size: 0.95rem;
+    margin-top: -5px;
+    display: block;
+    margin-bottom: 1.5rem;
   }
   
   .quote {
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid #b00;
+    background-color: #fdf3f3;
     font-style: italic;
-    color: #555;
-    border-left: 4px solid #ccc;
-    padding-left: 10px;
-    margin: 20px 0;
+    font-size: 1.15rem;
+    color: #400;
+    line-height: 1.6;
   }
   
   footer {
@@ -56,15 +64,19 @@ body {
     color: #888;
     border-top: 1px solid #ccc;
     padding-top: 20px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
   audio, video {
     display: block;
-    margin: 20px 0;
+    width: 100%;
+    margin: 1.5rem 0;
   }
   
   .article-preview {
     margin-bottom: 30px;
+    padding: 0;
   }
   
   .article-preview h2 {
@@ -81,3 +93,55 @@ body {
     text-decoration: underline;
   }
   
+  .preview-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    max-width: 800px;
+    margin: 1rem auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    gap: 1rem;
+  }
+  
+  .preview-image {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  
+  .preview-text {
+    flex: 1;
+  }
+  
+  .preview-text h2 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.4;
+  }
+  
+  .preview-text .date {
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  .image-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem; /* space between images */
+    margin: 2rem 0;
+    flex-wrap: wrap; /* allows responsive stacking on small screens */
+  }
+  
+  .side-image {
+    width: 300px;     /* adjust as needed */
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
